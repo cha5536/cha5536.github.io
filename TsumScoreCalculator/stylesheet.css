@@ -1,8 +1,8 @@
 /*@media only screen and (min-width: 0px) and (max-width: 600px){ */
 @media only screen 
 and (min-device-width: 320px) 
-and (max-device-width: 480px){
-  
+and (max-device-width: 1500px){
+
   input, ._bonus, button {
     /* background-color:lightblue; */
     width: 100%;
