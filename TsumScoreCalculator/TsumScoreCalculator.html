@@ -1,10 +1,14 @@
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./myJS.js"></script>
     <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="./mobileCSS.css" type="text/css" media="only screen and (min-width: 0px) and (max-width: 1441px)">
+    <link rel="stylesheet" href="./normalCSS.css" type="text/css" media="only screen and (min-width: 1442px)">
 </head>
 <body>
     
+  <!--
   <div id="banner-message">
     <p>
       總分數<br><input id="total" type="number"/><br>
@@ -13,7 +17,7 @@
     <button id="btn_bonus">計算等級紅利</button><br><br>
     等級紅利<br><div class="_bonus"></div>
     <p>
-      當前分數 <input id="score"/> <br>*<br> <div class="_bonus">等級紅利</div>
+      當前分數 <input id="score" type="number"/> <br>*<br> <div class="_bonus">等級紅利</div>
     </p>
     <button id="btn_final">計算總分</button>
     <p>
@@ -21,5 +25,30 @@
       <br><div id="result"></div>
     </p>
   </div>
-  
+  -->
+
+  <div id="mainDiv">
+    <div class="div01">
+      <span>總分數</span>
+      <input id="total" type="number"/>
+    </div>
+    <div class="div01">
+      <span>紅利分數</span>
+      <input id="bonusscore" type="number"/>
+    </div>
+    <button id="btn_bonus">計算等級紅利</button>
+    <div>
+      <span>等級紅利</span>
+      <input class="_bonus" type="number" readonly/>
+      <span>當前分數</span>
+      <input id="score"/>
+      <span id="multiplier">*</span>
+      <span>等級紅利</span>
+      <input class="_bonus" type="number" readonly/>
+      <button id="btn_final">計算總分</button>
+      <span>計算出的結果</span>
+      <div id="result"></div>
+    </div>
+  </div>
+
 </body>

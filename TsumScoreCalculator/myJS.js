@@ -15,8 +15,11 @@ function Initial() {
         alert("請輸入分數");
     else
     {
-      var lvBonus = bonusscore/(total-bonusscore);
-      $("._bonus").html(lvBonus);
+      const floatPoint = 1000000000;
+      var lvBonus = parseFloat(bonusscore/(total-bonusscore));
+      lvBonus = Math.round(lvBonus*floatPoint) / floatPoint;
+      //$("._bonus").html(lvBonus);
+      $("._bonus").val(lvBonus);
     }
     
   });
@@ -27,7 +30,8 @@ function Initial() {
     var result = $("#result");
     var finalscore = $("#score");
   
-    var lvBonus = parseInt($("._bonus").text());
+    //var lvBonus = parseInt($("._bonus").text());
+    var lvBonus = parseInt($("._bonus").val());
     if(isNaN(lvBonus))
         alert("請先計算等級紅利");
     else

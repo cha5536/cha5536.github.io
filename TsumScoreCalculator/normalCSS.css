@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    font-size: x-large;
+  }
+
+  .div01 {
+    /*background-color: chocolate;*/
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  span {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 28%;
+  }
+  
+  input {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 70%;
+  }
+
+  button, #result {
+    font-size: x-large;
+  }

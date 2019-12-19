@@ -1,0 +1,24 @@
+.div01 {
+    box-sizing: border-box;
+    /*background-color: aqua;*/
+    display: block;
+    padding: 5px;
+  }
+
+  span, input {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    margin: 2;
+    padding: 4px 10px;
+    font-size: xx-large;
+  }
+
+  input {
+    border: 1px gray solid;
+    border-radius: 10px;
+  }
+
+  button, #result {
+    font-size: xx-large;
+  }

@@ -1,98 +1,43 @@
-/*@media only screen and (min-width: 0px) and (max-width: 600px){ */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 1500px){
 
-  input, ._bonus, button {
-    /* background-color:lightblue; */
-    width: 100%;
-    height: 35px;
-    display: inline-block;
-    font-size: 20px;
-  }
-
-  #result {
-    min-height: 35px;
-    width: 100%;
-  }
+* {
+  box-sizing: border-box;
+  font-family: Helvetica neue, roboto;
 }
 
-@media screen and (max-width: 800px) {
-  input, ._bonus, button {
-    /* background-color:lightblue; */
-    width: 100%;
-    height: 35px;
-    display: inline-block;
-    font-size: 20px;
-  }
-
-  #result {
-    min-height: 35px;
-    width: 100%;
-  }
-}  
-
-body {
-  background: #20262E;
-  padding: 20px;
-  font-family: Helvetica;
-  display: block;
+#mainDiv {
+  background-color: white;
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
   margin: 0 auto;
 }
 
-#banner-message {
-  background: #fff;
-  border-radius: 4px;
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
-  transition: all 0.2s;
-  margin: 0 auto;
-  /* width: 300px; */
-  width: 90%;
-}
-
-button {
-  background: #0084ff;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 14px;
-  font-size: 15px;
-  color: #fff;
-}
-
-#banner-message.alt {
-  background: #0084ff;
-  color: #fff;
-  /* margin-top: 40px; */
-  /* width: 200px; */
-}
-
-#banner-message.alt button {
-  background: #fff;
-  color: #000;
-  margin: 2px;
-}
-
-#result {
-  background: #76D7C4;
+.div01 {
   width: 100%;
 }
 
-input {
-  font-size: 18px;
-  margin: 2px;
-  text-align: center;
+button {
+  display: block;
+  padding: 6px 10%;
+  margin: 10px auto;
 }
 
-._bonus {
-  display: inline-block;
+input:read-only {
+  background-color: darkgray;
+}
+
+#multiplier {
   text-align: center;
-  line-height: 30px;
-  min-width: 300px;
-  min-height: 30px;
-  min-width: 300px;
-  max-width: 100%;
-  padding: 2px;
-  border: 2px #566573 solid;
+  margin-top: 1.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#result {
+  min-height: 50px;
+  /*border: 1px red solid;*/
+  background: #76D7C4;
+  width: 100%;
+  text-align: center;
 }
